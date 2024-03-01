@@ -1,0 +1,652 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --major-font-color: #645F88;
+    --nav-link-color: #6C55F9;
+    --hero-h1-color: #645F88;
+    --primary-h1-size: 2.5rem;
+    --hero-bg: #F6F5FC;
+    --price-card-price: #2D2B3A;
+    --second-major-color: #a4a1c8;
+    --light-grey-font: #C9C7DC;
+    --secondary-btn-bg-clr: #B8B4D5;
+    --h1-font: 2rem;
+    --h1-sub-font: 1.5rem;
+    --card-primary-color: #898798;
+    --h5-primary-fs: 1.25rem;
+    --additional-box-shadow: 0 4px 16px rgba(107, 85, 249, 0.5);
+    --box-shadow: 0 2px 6px rgba(216, 216, 216, 0.24);
+    --semi-font-color: rgba(100, 95, 136, 0.75);
+    --hover-box-shadow:rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.btn-bg {
+    background-color: var(--nav-link-color);
+    color: white;
+    border: 1px solid transparent;
+}
+
+.btn-bg:hover {
+    background-color: #645f88;
+    color: white;
+    border: 1px solid transparent;
+}
+
+/* Header section start */
+.navbar-brand,
+.navbar-brand em {
+    color: var(--nav-link-color);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--nav-link-color)
+}
+
+.free-analytics a {
+    background-color: var(--nav-link-color);
+    font-size: 14px;
+    padding: 8px 10px;
+}
+
+
+.hdr{
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+/* Header section end */
+
+
+
+/* hero section start */
+
+.hero-section {
+    color: var(--major-font-color);
+    margin: 90px 0px 16px 0px;
+    padding: 0px 14px 0px 14px;
+}
+
+.hero-container {
+    background-color: var(--hero-bg);
+    position: relative;
+    padding: 40px 0px 30px 0px;
+}
+
+.hero-card-1 {
+    padding-left: 8%;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.hero .row {
+    height: 100%;
+    padding: 80px 0px 80px 80px;
+    height: 540px;
+}
+
+.hero h1 {
+    font-size: var(--primary-h1-size);
+    color: var(--hero-h1-color);
+    padding: 30px 0px;
+}
+
+.hero p {
+    color: var(--hero-h1-color);
+    font-size: 1.2rem;
+}
+
+.watch {
+    margin: 20px 0px;
+    padding: 8px 18px;
+    border-radius: 30px;
+}
+
+.hero-img {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hero-container .down-arrow {
+    position: absolute;
+    background-color: white;
+    border-radius: 24px;
+    padding: 4px;
+    color: var(--nav-link-color);
+    box-shadow: var(--box-shadow);
+    margin-top: 13px;
+}
+
+.hero-container .down-arrow:hover {
+    background-color: var(--nav-link-color);
+    color: white;
+}
+
+
+/* hero end */
+
+/* service section */
+
+.service-title {
+    color: var(--hero-h1-color);
+    margin-bottom: 60px;
+    font-size: 10px;
+}
+
+.service-section {
+    padding: 60px 24px;
+}
+
+.service-title h1 {
+    font-size: var(--h1-font);
+}
+
+.service img {
+    max-width: 100px;
+    margin: auto;
+}
+
+.service .card {
+    padding: 25px 10px;
+    color: var(--hero-h1-color);
+    box-shadow: var(--box-shadow);
+    max-width: 310px;
+    color: var(--card-primary-color);
+}
+
+.s-card-title {
+    color: var(--hero-h1-color);
+}
+
+/* About Us */
+
+.about-section {
+    padding: 60px 0px;
+}
+
+.abt-us {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--card-primary-color);
+    letter-spacing: 3px;
+    padding: 5px 0px;
+}
+
+.abt-us-title {
+    color: var(--hero-h1-color);
+    padding: 5px 0px;
+    font-size: var(--h1-font);
+}
+
+.abt-us-title::after {
+    content: " ";
+    height: 200px;
+    width: 20px;
+    background-color: var(--major-font-color);
+}
+
+.abt-card p {
+    color: var(--card-primary-color);
+    padding: 3px 0px;
+    word-break: break-all;
+}
+
+.abt-btn {
+    background-color: var(--nav-link-color);
+    margin: 5px 0px;
+}
+
+.abt-img {
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+/* Our Section */
+
+.our-service-section {
+    background-color: var(--hero-bg);
+    padding: 60px 0px;
+}
+
+.our-service-card {
+    padding: 20px;
+}
+
+.our-service-card i {
+    color: var(--nav-link-color);
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 35px;
+    box-shadow: var(--box-shadow);
+}
+
+.our-service-card h4 {
+    margin: 5px;
+    font-size: 1.2rem;
+    padding: 8px 0px 4px 0px;
+}
+
+.our-service-card p {
+    font-size: 14px;
+    color: var(--card-primary-color);
+    word-spacing: 0.5px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+/* our service Section end */
+
+/* Check SEO Section Start */
+
+.check-seo-section {
+    background: rgb(143, 18, 246);
+    background: radial-gradient(circle, rgba(143, 18, 246, 1) 22%, rgba(99, 15, 246, 1) 100%);
+    padding: 60px 0px;
+}
+
+.title-h4 {
+    color: white;
+    font-size: var(--h1-font);
+    padding: 8px 0px 4px 0px;
+}
+
+.check-seo-section .input-group {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    min-height: 85px;
+    position: relative;
+}
+
+.check-seo-section .input-group input {
+    border-radius: 10px;
+}
+
+.check-seo-section .input-group button {
+    background-color: var(--price-card-price);
+    color: white;
+}
+
+/* Check SEO Section end */
+
+/* Pricing Plan section start */
+
+.section {
+    padding: 60px 0px 60px 0px;
+}
+
+.sub-title {
+    text-align: center;
+    margin: 15px 0px;
+    padding: 20px 10px;
+    color: var(--major-font-color);
+}
+
+.sub-title h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: var(--card-primary-color);
+}
+
+.sub-title h1 {
+    color: var(--hero-h1-color);
+    font-size: var(--h1-font);
+}
+
+.divider {
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: var(--nav-link-color);
+    border-radius: 40px;
+    margin: 10px 0px;
+}
+
+.pricing-card {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 34px 24px;
+    max-width: 330px;
+    box-shadow: var(--box-shadow);
+}
+
+.pricing-card .price h3 {
+    display: inline-block;
+}
+
+.pricing-card h6 {
+    color: var(--card-primary-color);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 5px 0px;
+}
+
+.price h3 {
+    color: var(--price-card-price);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.price span {
+    font-size: 2rem;
+    color: var(--major-font-color);
+}
+
+.pricing-card h5 {
+    color: var(--nav-link-color);
+    border-bottom: 1px solid var(--second-major-color);
+    padding-bottom: 19px;
+}
+
+.features p {
+    color: var(--price-card-price);
+    font-size: 14.5px;
+}
+
+.price-btn {
+    background-color: var(--secondary-btn-bg-clr);
+    border: none;
+    padding: 8px 0px;
+}
+
+.price-btn:hover {
+    background-color: var(--secondary-btn-bg-clr);
+    color: white;
+}
+
+.features .span {
+    padding-left: 6px;
+    color: var(--second-major-color);
+}
+
+.features {
+    border-bottom: 1px solid var(--second-major-color);
+    padding: 5px 0px;
+}
+
+
+.pricing-card button {
+    margin: 15px 0px;
+    width: 100%;
+}
+
+
+.additional-pricing-card {
+    background-color: var(--nav-link-color);
+    color: white;
+    box-shadow: 0 4px 16px rgba(107, 85, 249, 0.5);
+}
+
+.additional-pricing-card h5 {
+    color: white;
+}
+
+.additional-feature p {
+    color: white;
+}
+
+.additional-price h3,
+.additional-pricing-card h6 {
+    color: white;
+}
+
+.additional-price span {
+    color: var(--light-grey-font);
+}
+
+.additional-btn {
+    background-color: white;
+    color: #6C55F9;
+    padding: 8px 0px;
+}
+
+.additional-btn:hover{
+    background-color: var(--secondary-btn-bg-clr);
+    color: white;
+
+}
+
+/* Pricing plan end */
+
+/*  SEO & Brand start */
+
+.seo-brand-section {
+    padding: 60px 0px;
+    background: rgb(129, 7, 230);
+    background: radial-gradient(circle, rgba(129, 7, 230, 1) 0%, rgba(66, 8, 168, 1) 100%);
+    color: white;
+}
+
+.seo-brand-wrapper {
+    background: url('https://themewagon.github.io/seogram/assets/img/bg_pattern.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.seo-brand-text {
+    color: var(--hero-bg);
+    padding-top: 10px;
+}
+
+.seo-brand .divider {
+    background-color: white;
+}
+
+.seo-service h1 {
+    font-size: var(--h5-primary-fs);
+    color: white;
+}
+
+.seo-title {
+    font-size: var(--h1-font);
+}
+
+.seo-img-card {
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 40px 0px;
+    overflow: hidden;
+
+}
+
+.seo-brand {
+    padding: 20px 10px;
+}
+
+/* Seo & brand section end  */
+
+/* blog start */
+
+.blog-section {
+    padding: 60px 0px;
+}
+
+.blog-footer div {
+    padding: 8px 28px;
+}
+
+.card-size {
+    max-width: 310px;
+}
+
+.card-subtitle {
+    color: var(--hero-h1-color);
+}
+
+.blog-card {
+    color: #645F88;
+}
+
+.card-size .card{
+    box-shadow: var(--box-shadow);
+}
+
+.post-date {
+    font-size: 14px;
+    color: #645F88;
+    display: inline-block;
+    letter-spacing: -0.5px;
+}
+
+.card-text {
+    color: var(--card-primary-color);
+}
+
+.post-date a {
+    padding-left: 5px;
+    text-decoration: none;
+    color: var(--nav-link-color);
+    letter-spacing: -1px;
+}
+
+/* blog end */
+
+/* Footer start */
+
+.footer-section {
+    padding: 60px 0px;
+    background: rgb(43, 43, 43);
+    color: white;
+}
+
+.footer-container {
+    padding: 10px 0px 10px 0px;
+}
+
+.footer-wrapper {
+    background: url('https://themewagon.github.io/seogram/assets/img/world_pattern.svg');
+}
+
+.b-card {
+    max-width: 280px;
+}
+
+.social-links {
+    padding: 10px 0px;
+}
+
+.social-links i {
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--nav-link-color);
+    transition: all 0.5s;
+}
+
+.social-links i:hover {
+    background-color: #6C55F9;
+    color: white;
+
+}
+
+.company-services-links,
+.company-services-links li,
+a {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.company-services-links a:hover{
+    color: var(--light-grey-font);
+}
+
+.b-address,
+.b-phone,
+.b-mail {
+    padding: 10px 0px;
+    display: inline-block;
+    color: white;
+}
+
+.b-address:hover,.b-phone:hover,.b-mail:hover{
+    color: var(--secondary-btn-bg-clr);
+}
+
+.n-title,
+.n-text {
+    padding: 5px 0px;
+}
+
+.f-input-wrap,
+.f-sub-wrap {
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.c-symbol {
+    padding-right: 2px;
+}
+
+.f-privacy,
+.f-cookie {
+    color: white;
+}
+
+.f-privacy:hover,
+.f-cookie:hover {
+    color: var(--light-grey-font);
+}
+
+.f-sbr-btn{
+    background-color: white;
+    color: var(--nav-link-color);
+    border: none;
+}
+
+.f-sbr-btn:hover{
+    background-color: var(--second-major-color);
+    color: white;
+}
+
+
+
+/* Footer end */
+
+
+
+/* media queries*/
+
+@media screen and (max-width: 767px) {
+
+    .hero-card-1 {
+        padding-top: 10px;
+    }
+
+    .service .card {
+        max-width: 100%;
+    }
+
+    .check-seo-section .input-group {
+        width: 80%;
+    }
+
+    .title-h4 {
+        font-size: var(--h1-sub-font);
+    }
+
+    .footer-wrapper {
+        padding: 0px 20px;
+    }
+}
